@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sign_up_nav_graph"
+    app:startDestination="@id/introFragment">
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.examplenavgraphbugproject.IntroFragment"
+        android:label="intro_fragment">
+        <action
+            android:id="@+id/action_introFragment_to_locationFragment"
+            app:destination="@id/locationFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.examplenavgraphbugproject.LocationFragment"
+        android:label="Location fragment"
+        tools:layout="@layout/fragment_location">
+        <action
+            android:id="@+id/action_locationFragment_to_selectDrFragment"
+            app:destination="@id/selectDrFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+        <action
+            android:id="@+id/action_locationFragment_to_finalFragment"
+            app:destination="@id/finalFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectDrFragment"
+        android:name="com.example.examplenavgraphbugproject.SelectDrFragment"
+        android:label="fragment_select_dr"
+        tools:layout="@layout/fragment_select_dr">
+        <action
+            android:id="@+id/action_selectDrFragment_to_finalFragment"
+            app:destination="@id/finalFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpTo="@id/finalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalFragment"
+        android:name="com.example.examplenavgraphbugproject.FinalFragment"
+        android:label="FinalFragment"
+        tools:layout="@layout/fragment_final" />
+
+</navigation>

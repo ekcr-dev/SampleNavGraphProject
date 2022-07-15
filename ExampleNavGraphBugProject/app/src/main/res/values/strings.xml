@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ExampleNavGraphBugProject</string>
+    <string name="last_fragment">Last fragment.</string>
+    <string name="select_location">Select location.</string>
+    <string name="search">Search</string>
+    <string name="select_doctor">Select doctor.</string>
+    <string name="select_from_the_following_list">Select from the following list:</string>
+    <string name="yes">Yes</string>
+    <string name="would_you_like_to_select_a_location_and_doctor">Would you like to select a location and doctor?</string>
+    <string name="find_location_and_doctor">Find location and doctor</string>
+    <string name="try_street">Try street</string>
+    <string name="cancel">Cancel</string>
+    <string name="selected_title">Selected!</string>
+    <string name="selected_subtitle">You tapped an option.</string>
+    <string name="ok">Ok</string>
+
+
+</resources>
